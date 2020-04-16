@@ -1,6 +1,6 @@
 export async function getData() {
-    const response = await fetch('https://api.covid19api.com/all')
-    // const response = await fetch('https://api.covid19api.com/total/dayone/country/mexico/status/confirmed')
+    //const response = await fetch('https://api.covid19api.com/all')
+    const response = await fetch('https://api.covid19api.com/total/dayone/country/mexico/status/confirmed')
     const data = await response.json()
     return data
   }
