@@ -25,7 +25,7 @@
           labels: confirmed.map(item => new Intl.DateTimeFormat('es-MX', { month: 'long', day: 'numeric' }).format(new Date(item.date))),
           datasets: [
             {
-              label: 'Muertes',
+              label: 'Fallecidos',
               borderColor: 'red',
               data: deaths.map(item => item.cases),
             },
@@ -51,7 +51,7 @@
           },
           title: {
             display: true,
-            text: 'Todos los casos desde el primer reporte COVID-19',
+            text: 'Todos los casos desde el primer reporte COVID-19/Tutti i casi di COVID-19 dal primo Report',
             fontSize: 30,
             padding: 30,
             fontColor: '#12619c',
